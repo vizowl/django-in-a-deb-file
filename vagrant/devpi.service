@@ -1,0 +1,10 @@
+[Unit]
+Description=PyPI server and packaging/testing/release tool
+After=network.target
+
+[Service]
+Restart=on-failure
+ExecStart=/usr/local/bin/devpi-server
+
+[Install]
+WantedBy=multi-user.target

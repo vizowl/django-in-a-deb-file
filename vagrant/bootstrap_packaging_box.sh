@@ -8,4 +8,5 @@ pip install -U pip devpi-server
 
 # Use upstart to manage devpi process
 cp /vagrant/vagrant/devpi.conf /etc/init/
-start devpi
+systemctl enable /vagrant/vagrant/devpi.service
+systemctl start devpi

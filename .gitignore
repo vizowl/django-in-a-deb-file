@@ -20,3 +20,8 @@ debian/usr/share/static/
 
 # Python version file
 src/helloworld/version.py
+*.pyc
+debian/debhelper-build-stamp
+debian/*.debhelper
+*.log
+*.egg-info
