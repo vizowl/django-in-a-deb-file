@@ -4,6 +4,7 @@ After=network.target
 
 [Service]
 Restart=on-failure
+ExecStartPre=/usr/local/bin/devpi-server --init
 ExecStart=/usr/local/bin/devpi-server
 
 [Install]
